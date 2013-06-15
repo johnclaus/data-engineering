@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 1.2'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.6'
+  gem 'simplecov', :require => false
+  
 end
 
 group :doc do
