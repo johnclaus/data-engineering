@@ -4,13 +4,13 @@ My commit messages should be self explanatory and give you an idea of where my t
 
 One major deviation from the base requirements is that I decided to use redis and resque to queue the processing of the uploaded subsidiary files.  I felt this would be closer to a "real world solution", plus it was just a fun exercise.  I have listed detailed instructions below to help you get everything setup and installed to run my application.  I hope you enjoy reviewing it as much as I enjoyed writing it.
 
-# Prerequisites
+## Prerequisites
 1. redis 2.6.13
 2. Ruby 1.9.3-p429
 3. Rails 4.0.0.rc2
 4. sqlite3 3.7.12
 
-# Installation
+## Installation
 In order to install Ruby and Rails, I used [RVM](https://rvm.io/), but feel free to go with your preferences.  I installed redis and sqlite3 using [Homebrew](http://mxcl.github.io/homebrew/).  I'll also give instructions below on installing these using RVM and Homebrew.
 
 ### Install redis
