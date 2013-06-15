@@ -17,3 +17,6 @@
 
 # Ignore simplecov generated output
 /coverage
+
+# Ignore uploads
+/public/uploads
