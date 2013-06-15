@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130615064852) do
+ActiveRecord::Schema.define(version: 20130615223140) do
 
   create_table "items", force: true do |t|
     t.string  "description"
@@ -31,6 +31,12 @@ ActiveRecord::Schema.define(version: 20130615064852) do
   create_table "purchases", force: true do |t|
     t.integer "purchaser_id"
     t.integer "item_id"
+  end
+
+  create_table "subsidiary_data", force: true do |t|
+    t.string   "uploaded_data"
+    t.datetime "begin_processing_time"
+    t.datetime "complete_processing_time"
   end
 
 end
