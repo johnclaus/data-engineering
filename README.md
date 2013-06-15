@@ -22,8 +22,7 @@ In order to install Ruby and Rails, I used [RVM](https://rvm.io/), but feel free
 ### Install Ruby
 	rvm install ruby-1.9.3-p429
 
-### Install RubyGems (if necessary)
-	[RubyGems installation instructions](https://rubygems.org/pages/download)
+### Install RubyGems (if necessary) - [RubyGems installation instructions](https://rubygems.org/pages/download)
 
 ### Install all necessary gems
 	gem install bundler (if necessary)
