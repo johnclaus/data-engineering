@@ -1,2 +1,3 @@
-class Upload < ActiveRecord::Base
+class Upload < CarrierWave::Uploader::Base
+  storage :file
 end
