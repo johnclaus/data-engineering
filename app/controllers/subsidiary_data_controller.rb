@@ -1,6 +1,8 @@
 class SubsidiaryDataController < ApplicationController
   def index
     @purchases = Purchase.all
+    money_util = MoneyUtilities.new(@purchases)
+    @revenue = money_util.display_revenue
     @purchasers = Purchaser.count
     @items = Item.count
     @merchants = Merchant.count
@@ -20,11 +22,5 @@ class SubsidiaryDataController < ApplicationController
     else
       render :new
     end
-  end
-
-  def destroy
-    @subsidiary_data = SubsidiaryData.find(params[:id])
-    @subsidiary_data.destroy
-    redirect_to subsidiary_data_path
   end
 end
