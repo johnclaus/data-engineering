@@ -7,7 +7,7 @@ class Uploader
   end
   
   def self.perform(subsidiary_data_id)
-    subsidiary_data = SubsidiaryData.find(subsidiary_data_id).limit(1)
+    subsidiary_data = SubsidiaryData.find(subsidiary_data_id)
     subsidiary_data.begin_processing_time
     process_csv(subsidiary_data.uploaded_data.current_path)
     subsidiary_data.complete_processing
