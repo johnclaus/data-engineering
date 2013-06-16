@@ -21,7 +21,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.6'
   gem 'simplecov', :require => false
   gem 'foreman'
-  # gem 'debugger'
+  gem 'debugger'
 end
 
 group :doc do
