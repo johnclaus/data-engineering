@@ -11,11 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130615223140) do
+ActiveRecord::Schema.define(version: 20130616173840) do
 
   create_table "items", force: true do |t|
     t.string  "description"
-    t.decimal "price"
+    t.integer "price_cents"
+    t.string  "currency_type"
     t.integer "merchant_id"
   end
 
