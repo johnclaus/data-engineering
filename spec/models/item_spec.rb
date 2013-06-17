@@ -15,9 +15,4 @@ describe Item do
     item = Item.new(:price => "0")
     item.should_not be_valid
   end
-  
-  it "should have a numerical price" do
-    item = Item.new(:price => "John Claus")
-    item.should_not be_valid
-  end
 end
