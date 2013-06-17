@@ -5,12 +5,12 @@ class SubsidiaryData < ActiveRecord::Base
     Resque.enqueue(Uploader, self.id)
   end
 
-  def begin_processing_time
+  def start_processing_time
     self.begin_processing_time = Time.now
     self.save
   end
   
-  def complete_processing_time
+  def finish_processing_time
     self.complete_processing_time = Time.now
     self.save
   end

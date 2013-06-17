@@ -8,9 +8,9 @@ class Uploader
   
   def self.perform(subsidiary_data_id)
     subsidiary_data = SubsidiaryData.find(subsidiary_data_id)
-    subsidiary_data.begin_processing_time
+    subsidiary_data.start_processing_time
     process_csv(subsidiary_data.uploaded_data.current_path)
-    subsidiary_data.complete_processing
+    subsidiary_data.finish_processing_time
   end
   
   def self.process_csv(upload_file_path)
