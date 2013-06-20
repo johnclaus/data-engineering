@@ -14,10 +14,10 @@ One major deviation from the base requirements is that I decided to use redis an
 In order to install Ruby and Rails, I used [RVM](https://rvm.io/), but feel free to go with your preferences.  I installed redis and sqlite3 using [Homebrew](http://mxcl.github.io/homebrew/).  I'll also give instructions below on installing these using RVM and Homebrew.
 
 ### Install redis
-	brew install -v 2.6.13 redis
+	brew install redis
 
 ### Install sqlite3
-	brew install -v 3.7.12 sqlite3
+	brew install sqlite3
 
 ### Install Ruby
 	rvm install ruby-1.9.3-p429
