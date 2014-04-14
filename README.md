@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/johnclaus/data-engineering.png)](https://codeclimate.com/github/johnclaus/data-engineering)
+
 Thank you for taking the time to review my submission the Sr. Engineer position.  I made sure to fulfill all of the base requirements, while adding a few extra niceties.
 
 My commit messages should be self explanatory and give you an idea of where my thought process went with this project.  I also made sure I tested everything thoroughly, using RSpec and simplecov to ensure my paranoia.
