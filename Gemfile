@@ -22,6 +22,7 @@ group :development, :test do
   gem 'simplecov', :require => false
   gem 'foreman'
   gem 'debugger'
+  gem 'flog'
 end
 
 group :doc do
